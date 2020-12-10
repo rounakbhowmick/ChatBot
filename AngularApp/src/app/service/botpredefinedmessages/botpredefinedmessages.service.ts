@@ -1,3 +1,4 @@
+import { UsersService } from './../users/users.service';
 import { Injectable } from '@angular/core';
 import data from '../../predefinedmessage.json';
 
@@ -5,7 +6,7 @@ import data from '../../predefinedmessage.json';
   providedIn: 'root',
 })
 export class BotpredefinedmessagesService {
-  constructor() {}
+  constructor(private userservice: UsersService) {}
   temp;
   messages(value) {
     value = value.toLowerCase();
@@ -27,10 +28,10 @@ export class BotpredefinedmessagesService {
       value.includes('bye') ||
       value.includes('good night') ||
       value.includes('by')
-    )
-      // return data.closing[Math.floor(Math.random() * data.closing.length)];
+    ) {
+      this.userservice.exit.next(false);
       return 'Please don’t hesitate to use our live chat service again in future. We’re always here to help.  I hope to hear from you soon.';
-    else if (value.includes('who'))
+    } else if (value.includes('who'))
       return data.Ema[Math.floor(Math.random() * data.Ema.length)];
     else if (
       value.includes('how are you') ||
