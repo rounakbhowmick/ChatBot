@@ -41,4 +41,4 @@ Open [http://localhost:4000](http://localhost:4000) to view it in the browser.
 
 Refer: https://github.com/rounakbhowmick/ChatBot
 
-Link:  pizaa-chatbot.herokuapp.com/
+Link:  https://pizaa-chatbot.herokuapp.com/
