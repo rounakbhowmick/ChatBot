@@ -1,0 +1,10 @@
+<div class="searchbar">
+  <form #myForm="ngForm" (ngSubmit)="handleSubmit($event, myForm)">
+    <input
+      type="text"
+      [placeholder]="placeholder"
+      name="searchvalue"
+      [(ngModel)]="searchvalue"
+    />
+  </form>
+</div>

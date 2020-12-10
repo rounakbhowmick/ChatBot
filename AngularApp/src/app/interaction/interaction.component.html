@@ -1,0 +1,109 @@
+<ng-container *ngIf="filteritems.length > 0">
+  <div class="container" *ngFor="let i of filteritems">
+    <div
+      class="group"
+      *ngIf="
+        i.messagetype != 'list' &&
+        i.message != 'startoptions' &&
+        i.message != 'Veg' &&
+        i.message != 'Non-Veg'
+      "
+    >
+      <div
+        *ngIf="changetype(i) && i.type == 'bot'"
+        [style]="background"
+        class="bot message"
+      >
+        {{ message }}
+      </div>
+      <div class="bot" *ngIf="changetype(i)">
+        <img class="icon" [src]="imagepath" alt="pic" />
+      </div>
+      <div
+        *ngIf="changetype(i) && i.type == 'user'"
+        [style]="background"
+        class="bot message usermsg"
+      >
+        {{ message }}
+      </div>
+    </div>
+    <ng-container *ngIf="i.message == 'startoptions'">
+      <div class="list" *ngFor="let i of startoptions" (click)="listclick(i)">
+        <li>
+          <button class="start-options">{{ i.name }}</button>
+        </li>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="i.message == 'afteroffers'">
+      <div class="list" *ngFor="let i of afteroffers" (click)="listclick(i)">
+        <li>
+          <button class="afteroffers">{{ i.name }}</button>
+        </li>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="i.message == 'endoptions'">
+      <div class="list" *ngFor="let i of endoptions" (click)="listclick(i)">
+        <li>
+          <button class="end-options">{{ i.name }}</button>
+        </li>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="i.message == 'confirmation'">
+      <div class="list" *ngFor="let i of confirmation" (click)="listclick(i)">
+        <li>
+          <button class="end-options">{{ i.name }}</button>
+        </li>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="i.message == 'Place an Order'">
+      <div class="types" *ngFor="let i of types" (click)="listclick(i)">
+        <li>
+          <button class="start-options">{{ i.name }}</button>
+        </li>
+      </div>
+    </ng-container>
+    <div *ngIf="changeImageType(i)" class="carousel">
+      <div class="left arrow">
+        <button
+          class="arrowbtn"
+          [disabled]="current == 0"
+          (click)="current = current - 1"
+        >
+          <img src="../../assets/images/left-arrow.png" alt="" />
+        </button>
+      </div>
+      <div class="food">
+        <ul>
+          <li>
+            <img class="foodpic" [src]="imgurl" alt="pic" />
+          </li>
+          <li>
+            <h3 class="name">{{ imgname }}</h3>
+          </li>
+          <li>
+            <h3 class="price">₹{{ imgprice }}</h3>
+          </li>
+          <li class="buttonlist">
+            <button
+              [disabled]="imglocked"
+              class="btn"
+              (click)="clickedProduct(i)"
+            >
+              {{ imgstatus }}
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="right arrow">
+        <button
+          class="arrowbtn"
+          [disabled]="disabled()"
+          (click)="current = current + 1"
+        >
+          <img src="assets/images/right.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <p>{{ i.time | date: "E " }}{{ i.time | date: "shortTime" }}</p>
+  </div>
+</ng-container>

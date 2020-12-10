@@ -1,0 +1,26 @@
+.cross,
+.message {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  width: 3.7rem;
+}
+.main-chat {
+  width: 23rem;
+  height: 35rem;
+
+  position: absolute;
+  right: 2rem;
+  top: 1.9rem;
+}
+.header {
+  width: 23rem;
+}
+.box {
+  /* border: 2px solid blue; */
+  width: 23rem;
+  height: 24rem;
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  overflow-y: scroll;
+}

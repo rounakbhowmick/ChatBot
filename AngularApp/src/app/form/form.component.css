@@ -1,0 +1,75 @@
+/* @import "~bootstrap/dist/css/bootstrap.min.css"; */
+.form {
+  width: 17rem;
+  height: 17.5rem;
+  margin: auto;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgb(192, 32, 255);
+  background: #ffdda967;
+  border-radius: 15px;
+}
+button:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  border: none;
+}
+.btn {
+  background-color: rgba(230, 21, 21, 0.856);
+  color: white;
+  font-weight: 900;
+  border: none;
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+}
+.btn[disabled="disabled"],
+.btn:disabled {
+  background-color: rgba(230, 21, 21, 0.541);
+}
+.button {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+}
+input.ng-invalid.ng-dirty,
+input.ng-invalid.ng-touched {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ff0303;
+}
+
+input.ng-valid {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #17f30f !important;
+}
+input[type="text"] {
+  background: transparent;
+  border: none;
+  border-bottom: 0.5px solid #5050502f;
+  height: 2rem;
+  padding-bottom: 0rem;
+}
+input:focus,
+input.form-control:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+}
+
+p {
+  padding: 0 2.5rem;
+  text-align: center;
+  color: gray;
+}
+span {
+  color: grey;
+  font-size: x-small;
+  padding-bottom: 1rem;
+}

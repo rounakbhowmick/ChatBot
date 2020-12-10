@@ -1,0 +1,160 @@
+.icon {
+  width: 3rem;
+}
+button {
+  border: none;
+}
+.container {
+  padding: 0.7rem 1.4rem;
+  width: 100%;
+}
+.group {
+  display: flex;
+  flex-direction: row;
+
+  padding-bottom: 0.7rem;
+}
+.bot {
+  width: fit-content;
+  height: fit-content;
+  padding-right: 0.5rem;
+}
+
+.message {
+  color: white;
+  background: rgb(139, 139, 139);
+  text-align: start;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  word-wrap: break-word;
+  line-height: 1.4rem;
+  letter-spacing: 0.07rem;
+}
+p {
+  font-size: x-small;
+  color: grey;
+  font-weight: bold;
+  padding-left: 0.7rem;
+  padding-top: 0.5rem;
+}
+.image-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 2rem; */
+  align-items: center;
+}
+.images {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+.images img {
+  width: 14rem;
+  height: 12rem;
+  border-radius: 50%;
+}
+/* button {
+  width: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+} */
+/* button {
+  background: rgb(243, 130, 25);
+  color: white;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  border: none;
+}
+button[disabled="disabled"],
+button:disabled {
+  background: rgba(243, 130, 25, 0.562);
+  cursor: auto;
+} */
+h3 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+}
+.usermsg {
+  font-weight: 600;
+}
+.arrow {
+  display: flex;
+  width: 4rem;
+  background: none;
+  align-items: center;
+}
+.carousel {
+  display: flex;
+  justify-content: space-between;
+}
+.foodpic {
+  width: 90%;
+  border-radius: 50%;
+}
+li {
+  list-style: none;
+  padding-bottom: 0.5rem;
+}
+.food {
+  display: flex;
+  margin-left: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.price {
+  color: rgb(255, 103, 1);
+}
+.btn {
+  width: fit-content;
+  background: rgb(94, 128, 0);
+  color: white;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+}
+.btn[disabled="disabled"],
+.btn:disabled {
+  background: rgba(243, 130, 25, 0.562);
+  cursor: auto;
+}
+.buttonlist {
+  display: flex;
+  justify-content: center;
+}
+.start-options,
+.end-options,
+.afteroffers {
+  width: 100%;
+  padding: 0.3rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: 1px solid black;
+}
+.start-options:hover,
+.end-options:hover,
+.afteroffers:hover {
+  background: brown;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(243, 243, 243);
+}
+button:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+}
+.arrowbtn:disabled {
+  opacity: 50%;
+}
+
+button {
+  background: none;
+}

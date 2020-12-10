@@ -1,0 +1,47 @@
+<!-- <div class="main"> -->
+<!-- <img
+    src="../../assets/images/cross.png"
+    *ngIf="this.isClicked"
+    class="cross"
+    (click)="clicked()"
+    alt="cross"
+  />
+  <img
+    src="../../assets/images/message.png"
+    alt="message-logo"
+    class="message"
+    (click)="clicked()"
+    *ngIf="!this.isClicked"
+  /> -->
+<div class="main-chat">
+  <img
+    src="../../assets/images/cross.png"
+    *ngIf="this.isClicked"
+    class="cross"
+    (click)="clicked()"
+    alt="cross"
+  />
+  <img
+    src="../../assets/images/message.png"
+    alt="message-logo"
+    class="message"
+    (click)="clicked()"
+    *ngIf="!this.isClicked"
+  />
+  <div class="header" *ngIf="this.isClicked">
+    <app-titlebar></app-titlebar>
+  </div>
+  <div class="box" #target *ngIf="this.isClicked">
+    <app-form></app-form>
+    <!-- </div> -->
+    <app-interaction *ngIf="submitted"></app-interaction>
+  </div>
+  <div
+    class="searchclass"
+    *ngIf="this.isClicked && this.submitted && this.exit"
+  >
+    <!-- <div class="searchclass" *ngIf="this.isClicked"> -->
+    <app-searchbar></app-searchbar>
+  </div>
+</div>
+<!-- </div> -->

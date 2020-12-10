@@ -1,0 +1,67 @@
+{
+  "vegpizaa": [
+    {
+      "url": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=80",
+      "name": "Margherita",
+      "status": "Buy Now",
+      "price": 450,
+      "locked": false
+    },
+    {
+      "url": "https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "name": "Peppy Paneer",
+      "status": "Buy Now",
+      "price": 250,
+      "locked": false
+    },
+    {
+      "url": "https://images.pexels.com/photos/1435903/pexels-photo-1435903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "name": "Veg Extravaganza",
+      "status": "Buy Now",
+      "price": 350,
+      "locked": false
+    }
+  ],
+  "non-vegpizaa": [
+    {
+      "url": "https://images.unsplash.com/photo-1559160582-eab6966b680f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80",
+      "name": "Jerked Chicken Pizza",
+      "status": "Buy Now",
+      "price": 650,
+      "locked": false
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1599130143407-2a6ff8a196c9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=667&q=80",
+      "name": "Pepperoni Pizza",
+      "status": "Buy Now",
+      "price": 550,
+      "locked": false
+    },
+    {
+      "url": "https://images.pexels.com/photos/2909822/pexels-photo-2909822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "name": "Classic Chicken Pizza",
+      "status": "Buy Now",
+      "price": 550,
+      "locked": false
+    }
+  ],
+  "startoptions": [
+    {
+      "name": "Place an Order"
+    },
+    {
+      "name": "Track"
+    },
+    {
+      "offers": "Offers"
+    }
+  ],
+  " types": [
+    {
+      "name": "Veg"
+    },
+    {
+      "name": "Non-Veg"
+    }
+  ]
+}

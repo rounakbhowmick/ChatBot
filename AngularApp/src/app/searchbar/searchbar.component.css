@@ -1,0 +1,13 @@
+input:focus,
+input.form-control:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+}
+input[type="text"] {
+  border: none;
+  border-top: 0.0001px solid rgb(150, 150, 150);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 1rem;
+  letter-spacing: 0.05rem;
+}
